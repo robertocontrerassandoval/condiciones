@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condiones y operadores logicos</title>
+</head>
+<body style = "text-align:center">
+
+    <div>
+        <select name="" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+
+        <select name="" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+
+        <select name="" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+    </div>
+
+    <button>Ingresar</button>
+    <p id="mensaje"> </p>
+
+    <script>
+        const btn = document.querySelector("button")
+        const mensaje = document.querySelector("#mensaje")
+
+        btn.addEventListener( "click", () =>  {
+            
+            const seleccion = document.querySelectorAll("select")
+
+            let value1 = seleccion[0].value
+            let value2 = seleccion[1].value
+            let value3 = seleccion[2].value
+
+            const [{value:a},  {value:b}, {value:c}] = document.querySelectorAll("select")
+            
+            // console.log("VALUE 1 @@@", value1)
+            // console.log("VALUE 1 @@@", value2)
+            // console.log("VALUE 1 @@@", value3)
+
+            // console.log("VALUE 1", a)
+            // console.log("VALUE 1", b)
+            // console.log("VALUE 1", c)
+
+            console.log(document.querySelectorAll("select"))
+
+     
+
+        let clave = a + b + c
+
+        if(clave === "911"){
+            mensaje.innerHTML = "password 1 correcto"
+
+        }
+        else if(clave === "714") {
+            mensaje.innerHTML = "password 2 correcto"
+
+        }
+
+        else {
+            mensaje.innerHTML = "password incorrecto"
+        }
+
+    })
+    </script>
+</body>
+</html>

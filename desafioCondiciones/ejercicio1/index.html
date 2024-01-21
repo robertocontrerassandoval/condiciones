@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condiones y operadores logicos</title>
+</head>
+<body>
+ <img src="/img/casa.jpg" alt="casa" width="300">
+
+    <script>
+        let borderShow = false
+        const img = document.querySelector("img")
+
+        img.addEventListener("click",() => {
+            if(!borderShow) {
+                img.style.border = "solid red 2px"
+                borderShow = true
+            }
+
+            else {
+                img.style.border = "none"
+                borderShow = false
+
+            }
+
+
+        })
+    </script>
+</body>
+</html>

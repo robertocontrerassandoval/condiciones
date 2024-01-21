@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condiones y operadores logicos</title>
+  
+</head>
+
+<body style=" text-align: center;">
+   
+        <div>
+            <img src="/img/casa.jpg" alt="casa1" width="200">
+            <input type="text" id="ingresar1">
+        </div>
+    
+        <div>
+            <img src="/img/emily-campbell-gVG8cRjHF-8-unsplash.jpg" alt="casa2" width="200">
+            <input type="text" id="ingresar2">
+        </div>
+    
+        <div>
+            <img src="/img/ritchie-valens-6fxiPO6bPpM-unsplash.jpg" alt="casa3" width="200">
+            <input type="text" id="ingresar3">
+        </div>
+
+
+
+
+    
+
+
+    <p id="resultado"> </p>
+
+    <button onclick="
+         let n1 = Number(document.querySelector('#ingresar1').value)
+         let n2 = Number(document.querySelector('#ingresar2').value)
+         let n3 = Number(document.querySelector('#ingresar3').value)
+         let suma = n1 + n2 + n3
+
+         let resultado = document.querySelector('#resultado')
+
+         if (suma <= 10){
+            resultado.innerHTML = 'llevas ' + suma  + ' stickers'
+         }
+        
+         else {
+            resultado.innerHTML = 'llevas demasiados stikers'
+         }
+
+    
+    ">verificar</button>
+   
+</body>
+</html>
